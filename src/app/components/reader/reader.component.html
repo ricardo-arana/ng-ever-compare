@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-title> Archivo de comparación</mat-card-title>
+  <mat-card-content>
+    <form class="form-container" [formGroup]="forma" (ngSubmit)="generate()">
+    <mat-form-field appearance="outline">
+        <mat-label>Reporte Araxis</mat-label>
+        <ngx-mat-file-input formControlName="file" placeholder="Basic outline placeholder" ></ngx-mat-file-input>
+        <mat-icon matSuffix>folder</mat-icon>
+      </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Prefijo</mat-label>
+      <input matInput placeholder="Prefijo" formControlName="prefix"/>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Generar</button>
+    </form>
+  </mat-card-content>
+  
+</mat-card>

@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<mg:report version="1.0" xmlns:mg="http://www.araxis.com/2002/Merge/Reporting" type="FolderComparison">
+<mg:metaData>
+  <mg:title>Araxis Merge Folder Comparison Report</mg:title>
+  <mg:id show="false">0</mg:id>
+  <mg:date>23/11/2020 11:29:41</mg:date>
+<mg:options>
+	<mg:option name="clIgnWhitespace">1</mg:option>
+<mg:option name="clIgnoreCase">0</mg:option>
+<mg:option name="clIgnoreLineEndings">1</mg:option>
+<mg:option name="clHideCRLF">1</mg:option>
+<mg:option name="clThoroughComparison">1</mg:option>
+<mg:option name="clGatherStatisticsForInsertedAndRemovedFiles">0</mg:option>
+<mg:option name="clQuickDiffForLargeFiles">1</mg:option>
+<mg:option name="clQuickDiffLimit">512</mg:option>
+  <mg:option name="csInclude">Folders - **</mg:option>
+  <mg:option name="csInclude">Files - **</mg:option>
+	<mg:option name="clTopLevelFilesOnly">0</mg:option>
+<mg:option name="clShowUnchanged">1</mg:option>
+<mg:option name="clShowChangesColumn">1</mg:option>
+<mg:option name="clShowFileStamps">0</mg:option>
+
+	<mg:regexps>
+		<mg:regexp enabled="false">
+<mg:expression>^[ \t]*$</mg:expression>
+<mg:description>Blank lines</mg:description>
+</mg:regexp>
+		<mg:regexp enabled="false">
+<mg:expression>[ \t]*//[^&quot;]*$</mg:expression>
+<mg:description>C++ comments</mg:description>
+</mg:regexp>
+		<mg:regexp enabled="false">
+<mg:expression>^[ \t]*//.*\$(Date|Archive|Author|Header|JustDate|Modtime|Revision|Workfile):.*\$.*$</mg:expression>
+<mg:description>SourceSafe comments</mg:description>
+</mg:regexp>
+		<mg:regexp enabled="false">
+<mg:expression>^[ \t]*//(:(Header|Source):|.*Generated.*Genitor).*\$</mg:expression>
+<mg:description>Genitor comments</mg:description>
+</mg:regexp>
+		<mg:regexp enabled="false">
+<mg:expression>\$(Archive|Author|Date|Header|JustDate|Logfile|Modtime|Revision|Workfile):[^$]*\$</mg:expression>
+<mg:description>SourceSafe keywords</mg:description>
+</mg:regexp>
+		<mg:regexp enabled="false">
+<mg:expression>^[ \t]*'.*$</mg:expression>
+<mg:description>Visual Basic comments</mg:description>
+</mg:regexp>
+		<mg:regexp enabled="false">
+<mg:expression>\$(Author|Date|Header|Id|Locker|Name|RCSfile|Revision|Source|State):[^$]*\$</mg:expression>
+<mg:description>CVS comments</mg:description>
+</mg:regexp>
+		<mg:regexp enabled="false">
+<mg:expression>\$(ACident|ACheader|AClog|ACpart|ACversion|Author|Date|Header|Line|Locker|Log|Revision|Smsfile|Smspath|Today|Vcfile|Vcpath|Workfile):?[^$]*\$</mg:expression>
+<mg:description>AllChange keywords</mg:description>
+</mg:regexp>
+		<mg:regexp enabled="false">
+<mg:expression></mg:expression>
+<mg:description></mg:description>
+</mg:regexp>
+		<mg:regexp enabled="false">
+<mg:expression></mg:expression>
+<mg:description></mg:description>
+</mg:regexp>
+	</mg:regexps>
+</mg:options>
+<mg:folderDetails folder="1">
+  <mg:name>WEBAPP-RECLAMOS-NG</mg:name>
+  <mg:location>C:\Users\raranare\Desktop\pases\INICIATIVA-694_2\compilado\desarrollo\</mg:location>
+</mg:folderDetails>
+<mg:folderDetails folder="2">
+  <mg:name>WEBAPP-RECLAMOS-NG</mg:name>
+  <mg:location>C:\Users\raranare\Desktop\pases\INICIATIVA-694_2\compilado\lineabase\</mg:location>
+</mg:folderDetails>
+  <mg:changeSummaries set="all">
+    <mg:changeSummary folders="1,2">
+  	  <mg:changeCount type="unchanged" files="93" blocks1="61" blocks2="61" blocks="61" lines1="22430" lines2="22430" lines="44860" fileLines="44348" />
+  	  <mg:changeCount type="removed" files="34" blocks1="0" blocks2="0" blocks="0" lines1="0" lines2="0" lines="0" fileLines="0" />
+  	  <mg:changeCount type="inserted" files="34" blocks1="0" blocks2="0" blocks="0" lines1="0" lines2="0" lines="0" fileLines="0" />
+  	  <mg:changeCount type="changed" files="2" blocks1="13" blocks2="13" blocks="13" lines1="71" lines2="71" lines="142" fileLines="654" />
+    </mg:changeSummary>
+  </mg:changeSummaries>
+  <mg:changeSummaries set="selected" fileCount="1">
+    <mg:changeSummary folders="1,2">
+  	  <mg:changeCount type="unchanged" files="0" blocks1="0" blocks2="0" blocks="0" lines1="0" lines2="0" lines="0" fileLines="0" />
+  	  <mg:changeCount type="removed" files="1" blocks1="0" blocks2="0" blocks="0" lines1="0" lines2="0" lines="0" fileLines="0" />
+  	  <mg:changeCount type="inserted" files="0" blocks1="0" blocks2="0" blocks="0" lines1="0" lines2="0" lines="0" fileLines="0" />
+  	  <mg:changeCount type="changed" files="0" blocks1="0" blocks2="0" blocks="0" lines1="0" lines2="0" lines="0" fileLines="0" />
+    </mg:changeSummary>
+  </mg:changeSummaries>
+		<mg:classes folder="1">
+<mg:class name="U">
+<mg:cssAttribute name="color">#000000</mg:cssAttribute>
+<mg:cssAttribute name="background-color">#FFFFFF</mg:cssAttribute>
+<mg:cssAttribute name="font-family">Segoe UI</mg:cssAttribute>
+<mg:cssAttribute name="font-weight">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-style">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-size">9pt</mg:cssAttribute>
+<mg:cssAttribute name="text-decoration">none</mg:cssAttribute>
+</mg:class>
+<mg:class name="R">
+<mg:cssAttribute name="color">#000000</mg:cssAttribute>
+<mg:cssAttribute name="background-color">#F3E6D8</mg:cssAttribute>
+<mg:cssAttribute name="font-family">Segoe UI</mg:cssAttribute>
+<mg:cssAttribute name="font-weight">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-style">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-size">9pt</mg:cssAttribute>
+<mg:cssAttribute name="text-decoration">none</mg:cssAttribute>
+</mg:class>
+<mg:class name="I">
+<mg:cssAttribute name="color">#000000</mg:cssAttribute>
+<mg:cssAttribute name="background-color">#D1E8CF</mg:cssAttribute>
+<mg:cssAttribute name="font-family">Segoe UI</mg:cssAttribute>
+<mg:cssAttribute name="font-weight">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-style">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-size">9pt</mg:cssAttribute>
+<mg:cssAttribute name="text-decoration">none</mg:cssAttribute>
+</mg:class>
+<mg:class name="C">
+<mg:cssAttribute name="color">#000000</mg:cssAttribute>
+<mg:cssAttribute name="background-color">#DACDE6</mg:cssAttribute>
+<mg:cssAttribute name="font-family">Segoe UI</mg:cssAttribute>
+<mg:cssAttribute name="font-weight">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-style">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-size">9pt</mg:cssAttribute>
+<mg:cssAttribute name="text-decoration">none</mg:cssAttribute>
+</mg:class>
+		</mg:classes>
+		<mg:classes folder="2">
+<mg:class name="U">
+<mg:cssAttribute name="color">#000000</mg:cssAttribute>
+<mg:cssAttribute name="background-color">#FFFFFF</mg:cssAttribute>
+<mg:cssAttribute name="font-family">Segoe UI</mg:cssAttribute>
+<mg:cssAttribute name="font-weight">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-style">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-size">9pt</mg:cssAttribute>
+<mg:cssAttribute name="text-decoration">none</mg:cssAttribute>
+</mg:class>
+<mg:class name="R">
+<mg:cssAttribute name="color">#000000</mg:cssAttribute>
+<mg:cssAttribute name="background-color">#F3E6D8</mg:cssAttribute>
+<mg:cssAttribute name="font-family">Segoe UI</mg:cssAttribute>
+<mg:cssAttribute name="font-weight">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-style">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-size">9pt</mg:cssAttribute>
+<mg:cssAttribute name="text-decoration">none</mg:cssAttribute>
+</mg:class>
+<mg:class name="I">
+<mg:cssAttribute name="color">#000000</mg:cssAttribute>
+<mg:cssAttribute name="background-color">#D1E8CF</mg:cssAttribute>
+<mg:cssAttribute name="font-family">Segoe UI</mg:cssAttribute>
+<mg:cssAttribute name="font-weight">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-style">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-size">9pt</mg:cssAttribute>
+<mg:cssAttribute name="text-decoration">none</mg:cssAttribute>
+</mg:class>
+<mg:class name="C">
+<mg:cssAttribute name="color">#000000</mg:cssAttribute>
+<mg:cssAttribute name="background-color">#DACDE6</mg:cssAttribute>
+<mg:cssAttribute name="font-family">Segoe UI</mg:cssAttribute>
+<mg:cssAttribute name="font-weight">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-style">normal</mg:cssAttribute>
+<mg:cssAttribute name="font-size">9pt</mg:cssAttribute>
+<mg:cssAttribute name="text-decoration">none</mg:cssAttribute>
+</mg:class>
+		</mg:classes>
+</mg:metaData>
+<mg:rowData>
+<mg:row selected="false">
+  <mg:file name="assets" folder="1" size="0 KB" timestamp="10:44:09 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+  <mg:file name="assets" folder="2" size="0 KB" timestamp="18:07:36 20/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icons" folder="1" size="0 KB" timestamp="10:44:10 23/11/2020" class="U" level="1" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+  <mg:file name="icons" folder="2" size="0 KB" timestamp="18:07:34 20/11/2020" class="U" level="1" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icon-128x128.png" folder="1" size="18 KB" timestamp="10:44:10 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="icon-128x128.png" folder="2" size="18 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icon-144x144.png" folder="1" size="22 KB" timestamp="10:44:10 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="icon-144x144.png" folder="2" size="22 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icon-152x152.png" folder="1" size="23 KB" timestamp="10:44:10 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="icon-152x152.png" folder="2" size="23 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icon-192x192.png" folder="1" size="33 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="icon-192x192.png" folder="2" size="33 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icon-384x384.png" folder="1" size="95 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="icon-384x384.png" folder="2" size="95 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icon-512x512.png" folder="1" size="152 KB" timestamp="10:44:10 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="icon-512x512.png" folder="2" size="152 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icon-72x72.png" folder="1" size="8 KB" timestamp="10:44:10 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="icon-72x72.png" folder="2" size="8 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icon-96x96.png" folder="1" size="12 KB" timestamp="10:44:10 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="icon-96x96.png" folder="2" size="12 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="images" folder="1" size="0 KB" timestamp="10:44:09 23/11/2020" class="U" level="1" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+  <mg:file name="images" folder="2" size="0 KB" timestamp="18:07:35 20/11/2020" class="U" level="1" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="azul-abajo.png" folder="1" size="1 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="azul-abajo.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="back-negro.png" folder="1" size="1 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="back-negro.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="buscar.png" folder="1" size="28 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="buscar.png" folder="2" size="28 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="calendario.png" folder="1" size="1 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="calendario.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="chatbot-tour-demo.gif" folder="1" size="1,921 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="chatbot-tour-demo.gif" folder="2" size="1,921 KB" timestamp="11:39:38 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="check.png" folder="1" size="5 KB" timestamp="10:44:07 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="check.png" folder="2" size="5 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="check@2x.png" folder="1" size="11 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="check@2x.png" folder="2" size="11 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="check@3x.png" folder="1" size="17 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="check@3x.png" folder="2" size="17 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Claro2019.png" folder="1" size="280 KB" timestamp="10:44:06 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="Claro2019.png" folder="2" size="280 KB" timestamp="11:39:37 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="editar.png" folder="1" size="1 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="editar.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="editar@2x.png" folder="1" size="2 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="editar@2x.png" folder="2" size="2 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="editar@3x.png" folder="1" size="3 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="editar@3x.png" folder="2" size="3 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="error-404.png" folder="1" size="22 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="error-404.png" folder="2" size="22 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="error-404@2x.png" folder="1" size="63 KB" timestamp="10:44:07 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="error-404@2x.png" folder="2" size="63 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="error-404@3x.png" folder="1" size="118 KB" timestamp="10:44:07 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="error-404@3x.png" folder="2" size="118 KB" timestamp="11:39:37 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="error-500.png" folder="1" size="9 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="error-500.png" folder="2" size="9 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="error-500@2x.png" folder="1" size="20 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="error-500@2x.png" folder="2" size="20 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="error-500@3x.png" folder="1" size="33 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="error-500@3x.png" folder="2" size="33 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="exportar.png" folder="1" size="1 KB" timestamp="10:44:06 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="exportar.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="exportar@2x.png" folder="1" size="1 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="exportar@2x.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="exportar@3x.png" folder="1" size="2 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="exportar@3x.png" folder="2" size="2 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="formulario.png" folder="1" size="9 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="formulario.png" folder="2" size="9 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="hola.png" folder="1" size="17 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="hola.png" folder="2" size="17 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="hola@2x.png" folder="1" size="56 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="hola@2x.png" folder="2" size="56 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="hola@3x.png" folder="1" size="113 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="hola@3x.png" folder="2" size="113 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="icon-info.png" folder="1" size="1 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="icon-info.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="ir.png" folder="1" size="1 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="ir.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="ir@2x.png" folder="1" size="1 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="ir@2x.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="ir@3x.png" folder="1" size="1 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="ir@3x.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="peligro.png" folder="1" size="13 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="peligro.png" folder="2" size="13 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="peligro@2x.png" folder="1" size="37 KB" timestamp="10:44:06 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="peligro@2x.png" folder="2" size="37 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="peligro@3x.png" folder="1" size="74 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="peligro@3x.png" folder="2" size="74 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="rectangle.png" folder="1" size="1 KB" timestamp="10:44:08 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="rectangle.png" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="json" folder="1" size="0 KB" timestamp="10:44:09 23/11/2020" class="U" level="1" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+  <mg:file name="json" folder="2" size="0 KB" timestamp="18:07:36 20/11/2020" class="U" level="1" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="config.json" folder="1" size="1 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon3.png"/>
+  <mg:file name="config.json" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon3.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="sugerencias.json" folder="1" size="1 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon3.png"/>
+  <mg:file name="sugerencias.json" folder="2" size="1 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon3.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="styles" folder="1" size="0 KB" timestamp="10:44:09 23/11/2020" class="U" level="1" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+  <mg:file name="styles" folder="2" size="0 KB" timestamp="18:07:36 20/11/2020" class="U" level="1" changeCount="0" icon="FolderComparisonReport_files/icon1.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="animate.scss" folder="1" size="77 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+  <mg:file name="animate.scss" folder="2" size="77 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="styles.scss" folder="1" size="1 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+  <mg:file name="styles.scss" folder="2" size="1 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="_colors.scss" folder="1" size="1 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+  <mg:file name="_colors.scss" folder="2" size="1 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="_fonts.scss" folder="1" size="0 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+  <mg:file name="_fonts.scss" folder="2" size="0 KB" timestamp="11:39:36 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="_normalize.scss" folder="1" size="6 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+  <mg:file name="_normalize.scss" folder="2" size="6 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="_variables.scss" folder="1" size="0 KB" timestamp="10:44:09 23/11/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+  <mg:file name="_variables.scss" folder="2" size="0 KB" timestamp="11:39:35 29/10/2020" class="U" level="2" changeCount="0" icon="FolderComparisonReport_files/icon4.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="1-es2015.7e2d46a82dc0d86dd649.js" folder="1" size="225 KB" timestamp="10:44:02 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="1-es2015.896b29ff6e7c76d0d761.js" folder="2" size="225 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="1-es5.7e2d46a82dc0d86dd649.js" folder="1" size="225 KB" timestamp="10:44:05 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="1-es5.896b29ff6e7c76d0d761.js" folder="2" size="225 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="13-es2015.167eac67432b1a9f6e78.js" folder="1" size="890 KB" timestamp="10:44:05 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="13-es2015.503f4481866446a2445f.js" folder="2" size="890 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="13-es5.167eac67432b1a9f6e78.js" folder="1" size="905 KB" timestamp="10:44:05 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="13-es5.503f4481866446a2445f.js" folder="2" size="905 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="14-es2015.9cfbaed7444d57bbde96.js" folder="2" size="110 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="14-es2015.a52b7f37754b48d510a0.js" folder="1" size="109 KB" timestamp="10:44:02 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="14-es5.9cfbaed7444d57bbde96.js" folder="2" size="111 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="14-es5.a52b7f37754b48d510a0.js" folder="1" size="111 KB" timestamp="10:44:02 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="15-es2015.3348d6545c7d6354bb6f.js" folder="1" size="563 KB" timestamp="10:44:03 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="15-es2015.d93000e43202c5935e00.js" folder="2" size="563 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="15-es5.3348d6545c7d6354bb6f.js" folder="1" size="566 KB" timestamp="10:44:03 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="15-es5.d93000e43202c5935e00.js" folder="2" size="566 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="16-es2015.9909ea4b747b215f3016.js" folder="2" size="1,130 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="true">
+  <mg:file name="16-es2015.9c6d54fa87e3994d50c2.js" folder="1" size="1,130 KB" timestamp="10:44:04 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="16-es5.9909ea4b747b215f3016.js" folder="2" size="1,135 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="16-es5.9c6d54fa87e3994d50c2.js" folder="1" size="1,135 KB" timestamp="10:44:04 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="17-es2015.119f7526a46e8cfeef32.js" folder="2" size="134 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="17-es2015.d2c965fbf5c0b003f250.js" folder="1" size="134 KB" timestamp="10:44:06 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="17-es5.119f7526a46e8cfeef32.js" folder="2" size="140 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="17-es5.d2c965fbf5c0b003f250.js" folder="1" size="140 KB" timestamp="10:44:10 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="18-es2015.a118972bca837e940894.js" folder="2" size="424 KB" timestamp="16:15:57 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="18-es2015.d67d5ad725c970caff9c.js" folder="1" size="424 KB" timestamp="10:44:02 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="18-es5.a118972bca837e940894.js" folder="2" size="430 KB" timestamp="16:15:57 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="18-es5.d67d5ad725c970caff9c.js" folder="1" size="430 KB" timestamp="10:44:06 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="19-es2015.34affb66ac9aa27c1b56.js" folder="1" size="170 KB" timestamp="10:44:02 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="19-es2015.d63033aa5bb373885fe0.js" folder="2" size="170 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="19-es5.34affb66ac9aa27c1b56.js" folder="1" size="171 KB" timestamp="10:44:06 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="19-es5.d63033aa5bb373885fe0.js" folder="2" size="171 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="2-es2015.90143c29df52e67174eb.js" folder="1" size="75 KB" timestamp="10:44:03 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="2-es2015.90143c29df52e67174eb.js" folder="2" size="75 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="2-es5.90143c29df52e67174eb.js" folder="1" size="75 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="2-es5.90143c29df52e67174eb.js" folder="2" size="75 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="20-es2015.500d64484f2e71a5be47.js" folder="1" size="370 KB" timestamp="10:44:10 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="20-es2015.ed7fdacef6a09131470f.js" folder="2" size="369 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="20-es5.500d64484f2e71a5be47.js" folder="1" size="373 KB" timestamp="10:44:04 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="20-es5.ed7fdacef6a09131470f.js" folder="2" size="372 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="21-es2015.8733d624cab440b089fd.js" folder="2" size="26 KB" timestamp="16:15:56 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="21-es2015.9cef6ca2021127972b8c.js" folder="1" size="26 KB" timestamp="10:44:06 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="21-es5.8733d624cab440b089fd.js" folder="2" size="28 KB" timestamp="16:15:55 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="21-es5.9cef6ca2021127972b8c.js" folder="1" size="28 KB" timestamp="10:44:03 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="22-es2015.768bc542b2b553fc7308.js" folder="1" size="183 KB" timestamp="10:44:05 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="22-es2015.822943b72c54f6152fad.js" folder="2" size="183 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="22-es5.768bc542b2b553fc7308.js" folder="1" size="184 KB" timestamp="10:44:02 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="22-es5.822943b72c54f6152fad.js" folder="2" size="184 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="23-es2015.1f94559413e63888ad3b.js" folder="1" size="10 KB" timestamp="10:44:06 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="23-es2015.7f5053933c521dd59d78.js" folder="2" size="10 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="23-es5.1f94559413e63888ad3b.js" folder="1" size="11 KB" timestamp="10:44:04 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="23-es5.7f5053933c521dd59d78.js" folder="2" size="11 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="3-es2015.7022a30d40e8a64878fd.js" folder="1" size="87 KB" timestamp="10:44:06 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="3-es2015.7022a30d40e8a64878fd.js" folder="2" size="87 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="3-es5.7022a30d40e8a64878fd.js" folder="1" size="88 KB" timestamp="10:44:02 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="3-es5.7022a30d40e8a64878fd.js" folder="2" size="88 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="3rdpartylicenses.txt" folder="1" size="69 KB" timestamp="10:44:03 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon6.png"/>
+  <mg:file name="3rdpartylicenses.txt" folder="2" size="71 KB" timestamp="11:47:19 29/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon6.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="5-es2015.0e6ddc9f73f77b0455fc.js" folder="1" size="171 KB" timestamp="10:44:06 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="5-es2015.0e6ddc9f73f77b0455fc.js" folder="2" size="171 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="5-es5.0e6ddc9f73f77b0455fc.js" folder="1" size="193 KB" timestamp="10:44:10 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="5-es5.0e6ddc9f73f77b0455fc.js" folder="2" size="193 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="6-es2015.6db9776e77738df3255a.js" folder="1" size="9 KB" timestamp="10:44:02 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="6-es2015.6db9776e77738df3255a.js" folder="2" size="9 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="6-es5.6db9776e77738df3255a.js" folder="1" size="13 KB" timestamp="10:44:04 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="6-es5.6db9776e77738df3255a.js" folder="2" size="13 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="7-es2015.512b52fae07119c8a410.js" folder="1" size="23 KB" timestamp="10:44:03 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="7-es2015.b8989e4b0e1d5e00d8ea.js" folder="2" size="16 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="7-es5.512b52fae07119c8a410.js" folder="1" size="26 KB" timestamp="10:44:03 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="7-es5.b8989e4b0e1d5e00d8ea.js" folder="2" size="17 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="8-es2015.a66226ebc77ebddc7dcb.js" folder="2" size="21 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="8-es2015.da82812c64bd42eea259.js" folder="1" size="16 KB" timestamp="10:44:03 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="8-es5.a66226ebc77ebddc7dcb.js" folder="2" size="24 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="8-es5.da82812c64bd42eea259.js" folder="1" size="17 KB" timestamp="10:44:06 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="azul-abajo.b83c9080357168c408d7.png" folder="1" size="1 KB" timestamp="10:44:06 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="azul-abajo.b83c9080357168c408d7.png" folder="2" size="1 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="calendario.abc126370c197c2852e1.png" folder="1" size="1 KB" timestamp="10:44:03 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="calendario.abc126370c197c2852e1.png" folder="2" size="1 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="common-es2015.911b05616f0e6137d291.js" folder="2" size="13 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="common-es2015.ad8130c1fe7db4a9ee7a.js" folder="1" size="14 KB" timestamp="10:44:04 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="common-es5.911b05616f0e6137d291.js" folder="2" size="16 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="common-es5.ad8130c1fe7db4a9ee7a.js" folder="1" size="17 KB" timestamp="10:44:06 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="editar.0de17a1ebf362d0ca692.png" folder="1" size="1 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+  <mg:file name="editar.0de17a1ebf362d0ca692.png" folder="2" size="1 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon2.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="favicon.ico" folder="1" size="2 KB" timestamp="10:44:02 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon7.png"/>
+  <mg:file name="favicon.ico" folder="2" size="2 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon7.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="index.html" folder="1" size="2 KB" timestamp="10:44:02 23/11/2020" class="C" level="0" changeCount="1" icon="FolderComparisonReport_files/icon8.png"/>
+  <mg:file name="index.html" folder="2" size="2 KB" timestamp="11:48:02 29/10/2020" class="C" level="0" changeCount="0" icon="FolderComparisonReport_files/icon8.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="main-es2015.4111110eec5378726574.js" folder="2" size="1,454 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="main-es2015.9527064fe41326db1bb4.js" folder="1" size="1,453 KB" timestamp="10:44:03 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="main-es5.4111110eec5378726574.js" folder="2" size="1,581 KB" timestamp="16:15:51 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="main-es5.9527064fe41326db1bb4.js" folder="1" size="1,579 KB" timestamp="10:44:04 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="manifest.webmanifest" folder="1" size="2 KB" timestamp="10:44:06 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="manifest.webmanifest" folder="2" size="2 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="ngsw-worker.js" folder="1" size="138 KB" timestamp="10:44:02 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="ngsw-worker.js" folder="2" size="138 KB" timestamp="16:15:58 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="ngsw.json" folder="1" size="17 KB" timestamp="10:44:02 23/11/2020" class="C" level="0" changeCount="12" icon="FolderComparisonReport_files/icon3.png"/>
+  <mg:file name="ngsw.json" folder="2" size="17 KB" timestamp="16:15:58 27/10/2020" class="C" level="0" changeCount="0" icon="FolderComparisonReport_files/icon3.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="polyfills-es2015.89612042e90648a9f83f.js" folder="1" size="100 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="polyfills-es2015.89612042e90648a9f83f.js" folder="2" size="100 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="polyfills-es5.a3a0fcddeb7a7ebb8332.js" folder="1" size="180 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="polyfills-es5.a3a0fcddeb7a7ebb8332.js" folder="2" size="180 KB" timestamp="16:15:51 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Black.313a65630d341645c13e.woff" folder="1" size="85 KB" timestamp="10:44:06 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Black.313a65630d341645c13e.woff" folder="2" size="85 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Black.59eb3601394dd87f30f8.woff2" folder="1" size="64 KB" timestamp="10:44:10 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Black.59eb3601394dd87f30f8.woff2" folder="2" size="64 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-BlackItalic.cc2fadc3928f2f223418.woff" folder="1" size="92 KB" timestamp="10:44:04 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-BlackItalic.cc2fadc3928f2f223418.woff" folder="2" size="92 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-BlackItalic.f75569f8a5fab0893fa7.woff2" folder="1" size="71 KB" timestamp="10:44:02 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-BlackItalic.f75569f8a5fab0893fa7.woff2" folder="2" size="71 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Bold.50d75e48e0a3ddab1dd1.woff" folder="1" size="85 KB" timestamp="10:44:02 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Bold.50d75e48e0a3ddab1dd1.woff" folder="2" size="85 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Bold.b52fac2bb93c5858f3f2.woff2" folder="1" size="64 KB" timestamp="10:44:04 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Bold.b52fac2bb93c5858f3f2.woff2" folder="2" size="64 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-BoldItalic.4fe0f73cc919ba2b7a3c.woff" folder="1" size="90 KB" timestamp="10:44:04 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-BoldItalic.4fe0f73cc919ba2b7a3c.woff" folder="2" size="90 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-BoldItalic.94008e69aaf05da75c0b.woff2" folder="1" size="69 KB" timestamp="10:44:06 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-BoldItalic.94008e69aaf05da75c0b.woff2" folder="2" size="69 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Light.c73eb1ceba3321a80a0a.woff" folder="1" size="84 KB" timestamp="10:44:02 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Light.c73eb1ceba3321a80a0a.woff" folder="2" size="84 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Light.d26871e8149b5759f814.woff2" folder="1" size="63 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Light.d26871e8149b5759f814.woff2" folder="2" size="63 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-LightItalic.13efe6cbc10b97144a28.woff" folder="1" size="91 KB" timestamp="10:44:03 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-LightItalic.13efe6cbc10b97144a28.woff" folder="2" size="91 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-LightItalic.e8eaae902c3a4dacb9a5.woff2" folder="1" size="70 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-LightItalic.e8eaae902c3a4dacb9a5.woff2" folder="2" size="70 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Medium.1d6594826615607f6dc8.woff" folder="1" size="85 KB" timestamp="10:44:03 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Medium.1d6594826615607f6dc8.woff" folder="2" size="85 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Medium.90d1676003d9c28c0499.woff2" folder="1" size="64 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Medium.90d1676003d9c28c0499.woff2" folder="2" size="64 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-MediumItalic.13ec0eb5bdb821ff4930.woff2" folder="1" size="70 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-MediumItalic.13ec0eb5bdb821ff4930.woff2" folder="2" size="70 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-MediumItalic.83e114c316fcc3f23f52.woff" folder="1" size="92 KB" timestamp="10:44:11 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-MediumItalic.83e114c316fcc3f23f52.woff" folder="2" size="92 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Regular.35b07eb2f8711ae08d1f.woff" folder="1" size="84 KB" timestamp="10:44:10 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Regular.35b07eb2f8711ae08d1f.woff" folder="2" size="84 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Regular.73f0a88bbca1bec19fb1.woff2" folder="1" size="64 KB" timestamp="10:44:06 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Regular.73f0a88bbca1bec19fb1.woff2" folder="2" size="64 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-RegularItalic.4357beb823a5f8d65c26.woff2" folder="1" size="69 KB" timestamp="10:44:02 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-RegularItalic.4357beb823a5f8d65c26.woff2" folder="2" size="69 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-RegularItalic.f5902d5ef961717ed263.woff" folder="1" size="90 KB" timestamp="10:44:06 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-RegularItalic.f5902d5ef961717ed263.woff" folder="2" size="90 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Thin.ad538a69b0e8615ed041.woff2" folder="1" size="62 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Thin.ad538a69b0e8615ed041.woff2" folder="2" size="62 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-Thin.d3b47375afd904983d9b.woff" folder="1" size="83 KB" timestamp="10:44:03 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-Thin.d3b47375afd904983d9b.woff" folder="2" size="83 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-ThinItalic.5b4a33e176ff736a74f0.woff2" folder="1" size="67 KB" timestamp="10:44:04 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-ThinItalic.5b4a33e176ff736a74f0.woff2" folder="2" size="67 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="Roboto-ThinItalic.8a96edbbcd9a6991d793.woff" folder="1" size="89 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+  <mg:file name="Roboto-ThinItalic.8a96edbbcd9a6991d793.woff" folder="2" size="89 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon9.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="runtime-es2015.09730032b674341429f7.js" folder="1" size="3 KB" timestamp="10:44:06 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="runtime-es2015.6935aa14a5e5994b4632.js" folder="2" size="3 KB" timestamp="16:15:52 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="runtime-es5.09730032b674341429f7.js" folder="1" size="3 KB" timestamp="10:44:06 23/11/2020" class="R" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="runtime-es5.6935aa14a5e5994b4632.js" folder="2" size="3 KB" timestamp="16:15:52 27/10/2020" class="I" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="safety-worker.js" folder="1" size="1 KB" timestamp="10:44:02 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="safety-worker.js" folder="2" size="1 KB" timestamp="16:15:58 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="styles.2fda436c671d6166e4fa.css" folder="1" size="243 KB" timestamp="10:44:11 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon10.png"/>
+  <mg:file name="styles.2fda436c671d6166e4fa.css" folder="2" size="243 KB" timestamp="16:15:50 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon10.png"/>
+</mg:row>
+<mg:row selected="false">
+  <mg:file name="worker-basic.min.js" folder="1" size="1 KB" timestamp="10:44:05 23/11/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+  <mg:file name="worker-basic.min.js" folder="2" size="1 KB" timestamp="16:15:58 27/10/2020" class="U" level="0" changeCount="0" icon="FolderComparisonReport_files/icon5.png"/>
+</mg:row>
+</mg:rowData>
+</mg:report>

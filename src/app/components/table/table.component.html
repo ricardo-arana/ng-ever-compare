@@ -1,0 +1,18 @@
+<mat-card *ngIf="fileList.length" >
+    <mat-card-title>
+        {{ title}}
+    </mat-card-title>
+    <mat-card-subtitle> total {{fileList.length }}</mat-card-subtitle>
+    <mat-card-content >
+        <table mat-table [dataSource]="fileList" class="mat-elevation-z8">
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Aplicación en RTC: COMP.WEBAPP-RECLAMOS-NG  <br> <b>Archivos</b>  </th>
+                <td mat-cell *matCellDef="let element"> {{ prefix +  element.name}} </td>
+              </ng-container>
+
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-card-content>
+</mat-card>
