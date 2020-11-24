@@ -1,8 +1,5 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { rejects } from 'assert';
-import { from } from 'rxjs';
-import { mergeMap } from 'rxjs/operators';
 import * as xml2js from 'xml2js';
 import { FileModel } from '../models/file.model';
 
@@ -10,23 +7,7 @@ import { FileModel } from '../models/file.model';
   providedIn: 'root',
 })
 export class ComprareService {
-  constructor(private http: HttpClient) {}
-
-  getXml() {
-    return this.http
-      .get('/assets/FolderComparisonReport.xml', {
-        headers: new HttpHeaders()
-          .set('Content-Type', 'text/xml')
-          .append('Access-Control-Allow-Methods', 'GET')
-          .append('Access-Control-Allow-Origin', '*')
-          .append(
-            'Access-Control-Allow-Headers',
-            'Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method'
-          ),
-        responseType: 'text',
-      })
-      .pipe(mergeMap((respose) => from(this.parseXML(respose))));
-  }
+  constructor() {}
 
   parseXML(data: string) {
     return new Promise((resolve) => {
@@ -40,7 +21,6 @@ export class ComprareService {
       parser.parseString(data, (err: any, result: any) => {
         try {
           const obj: any[] = result['mg:report']['mg:rowData'][0]['mg:row'];
-          // console.log(obj)
           obj.forEach((row) => {
             const file: any[] = row['mg:file'];
             if (file.length === 1) {

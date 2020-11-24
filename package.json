@@ -23,9 +23,11 @@
     "@angular/router": "~11.0.1",
     "@angular/service-worker": "~11.0.1",
     "@types/xml2js": "^0.4.7",
+    "angular-dashjs-player": "^1.0.2",
     "ngx-material-file-input": "^2.1.1",
     "rxjs": "~6.6.0",
     "timers": "^0.1.1",
+    "timers-browserify": "^2.0.12",
     "tslib": "^2.0.0",
     "xml2js": "^0.4.23",
     "zone.js": "~0.10.2"
