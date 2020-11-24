@@ -14,6 +14,7 @@ export class AppComponent {
   title = 'ng-eve-compare';
   archivosNuevos: FileModel[] = [];
   archivosBorrado: FileModel[] = [];
+  archivosModificados: FileModel[] = [];
   prefix = '';
 
   constructor(private compare: ComprareService) {
@@ -23,6 +24,7 @@ export class AppComponent {
   mostrarArchivos(archivos: any) {
     this.archivosNuevos = archivos.archivosNuevos;
     this.archivosBorrado = archivos.archivosBorrado;
+    this.archivosModificados = archivos.archivosModificados;
     this.prefix = archivos.prefix;
 
   }
