@@ -1,6 +1,7 @@
 
 import { Component } from '@angular/core';
 import { FileModel } from './models/file.model';
+import { CheckForUpdateService } from './services/check-for-update.service';
 import { ComprareService } from './services/comprare.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class AppComponent {
   archivosModificados: FileModel[] = [];
   prefix = '';
 
-  constructor(private compare: ComprareService) {
+  constructor(private checkForUpdate: CheckForUpdateService) {
     
   }
 
