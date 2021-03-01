@@ -1,7 +1,5 @@
 
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
-import { pluck } from 'rxjs/operators';
 import { FileModel } from './models/file.model';
 import { ComprareService } from './services/comprare.service';
 

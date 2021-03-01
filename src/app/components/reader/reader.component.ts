@@ -34,11 +34,11 @@ export class ReaderComponent implements OnInit {
     console.log(files.files[0])
     const reader = new FileReader();
     reader.onload = ( files: any) => {
-      const textXml = atob(files.target.result.split(',')[1]).substr(3);
+      let textXml = atob(files.target.result.split(',')[1])
+      textXml = textXml.replace('\u00EF\u00BB\u00BF', "");
       this.compareService.parseXML(textXml).then(
         (archivos: any) => this.salida.emit({prefix, ...archivos})
       );
-      console.log();
     }
     reader.readAsDataURL(files.files[0]);
   }

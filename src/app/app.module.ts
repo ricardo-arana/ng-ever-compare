@@ -20,11 +20,14 @@ import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TableComponent } from './components/table/table.component';
 import {MatTableModule} from '@angular/material/table';
+import { InstructionsComponent } from './components/instructions/instructions.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
     ReaderComponent,
-    TableComponent
+    TableComponent,
+    InstructionsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import {MatTableModule} from '@angular/material/table';
     MatGridListModule,
     MatButtonModule,
     ReactiveFormsModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
