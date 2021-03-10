@@ -11,6 +11,7 @@ export class CheckForUpdateService {
 
   constructor(private appRef: ApplicationRef,private updates: SwUpdate) { 
      // Allow the app to stabilize first, before starting polling for updates with `interval()`.
+     console.log('check updates active');
      const appIsStable$ = appRef.isStable.pipe(first(isStable => isStable === true));
      const everyHour$ = interval( 60 * 60 * 1000);
      const everySixHoursOnceAppIsStable$ = concat(appIsStable$, everyHour$);
@@ -25,7 +26,9 @@ export class CheckForUpdateService {
     this.updates.available.subscribe(event => {
       console.log('current version is', event.current);
       console.log('available version is', event.available);
-      this.updates.activateUpdate().then(() => document.location.reload());
+      if(confirm('Hay una nueva versión de la aplicación, desea actualizar?')){
+        this.updates.activateUpdate().then(() => document.location.reload());
+      }
     });
     this.updates.activated.subscribe(event => {
       console.log('old version was', event.previous);
